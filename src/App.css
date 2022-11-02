@@ -1,0 +1,15 @@
+@font-face {
+  font-family: BergenTextBold;
+  src: url('./assets/fonts/BergenText-Bold.otf');
+}
+@font-face {
+  font-family: BergenText;
+  src: url('./assets/fonts/BergenText-Regular.otf');
+}
+@font-face {
+  font-family: BergenTextSBold;
+  src: url('./assets/fonts/BergenText-SemiBold.otf');
+}
+div > h1 {
+  font-family: BergenText;
+}

@@ -1,7 +1,9 @@
 import { useRef, useState } from 'react';
 // import 'react-phone-number-input/style.css';
 // import PhoneInput from 'react-phone-number-input';
-
+import Sidebar from './components/Sidebar/Sidebar';
+import Footer from './pages/Footer';
+import Header from './pages/Header';
 import './App.css';
 import useDebounce from './Hooks/useDebounce';
 import { uuidv4 } from './util';
@@ -21,7 +23,7 @@ import Fetch from './Advance/Fetch';
 import Memo from './Advance/Memo';
 import { useCountDown } from './Hooks/new/useCountDown';
 
-function App() {
+function Playground() {
   // console.log(uuidv4());
   // console.log(formatTime.fToNow(Date.now()));
   const myInput = useInput('', {
@@ -130,5 +132,15 @@ function App() {
     </div>
   );
 }
+const App = () => {
+  const [show, setShow] = useState(false);
+  return (
+    <>
+      <Sidebar onShow={() => setShow(!show)} />
 
+      {/* <Header />
+      <Footer /> */}
+    </>
+  );
+};
 export default App;

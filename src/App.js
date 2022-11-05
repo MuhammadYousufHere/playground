@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 // import 'react-phone-number-input/style.css';
+import { QueryClientProvider, QueryClient } from 'react-query';
 // import PhoneInput from 'react-phone-number-input';
 import Sidebar from './components/Sidebar/Sidebar';
 import Footer from './pages/Footer';
@@ -22,6 +23,8 @@ import NormalComp from './Hoc/NormalComp';
 import Fetch from './Advance/Fetch';
 import Memo from './Advance/Memo';
 import { useCountDown } from './Hooks/new/useCountDown';
+import Pagenation from './components/Pagenation/Pagenation';
+import PagenationQ from './components/Pagenation/PagenationQ';
 
 function Playground() {
   // console.log(uuidv4());
@@ -134,12 +137,21 @@ function Playground() {
 }
 const App = () => {
   const [show, setShow] = useState(false);
+  const client = new QueryClient();
   return (
+    // <QueryClientProvider
+    //   client={client}
+    //   contextSharing
+    // >
+    //   <Sidebar onShow={() => setShow(!show)} />
+    //   {/* <Pagenation /> */}
+    //   <PagenationQ />
+    //   {/* <Header />
+    //   <Footer /> */}
+    // </QueryClientProvider>
     <>
-      <Sidebar onShow={() => setShow(!show)} />
-
-      {/* <Header />
-      <Footer /> */}
+      <Header />
+      <Footer />
     </>
   );
 };

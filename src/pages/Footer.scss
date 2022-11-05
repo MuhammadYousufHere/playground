@@ -1,7 +1,6 @@
-$footer-bg: #2c3e50;
-$footer-anchor: #27a4d9;
+@use '../styles/colors' as *;
 .footer-container {
-  background-color: $footer-bg;
+  background-color: $primary;
   font-family: inherit;
   padding: 2rem 6rem;
   .footer-content {
@@ -16,7 +15,7 @@ $footer-anchor: #27a4d9;
           list-style-type: none;
           a {
             text-decoration: none;
-            color: $footer-anchor;
+            color: $secondary;
             &:hover {cursor:pointer}
           }
         }

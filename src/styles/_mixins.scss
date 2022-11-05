@@ -1,0 +1,7 @@
+@mixin transform($prperty) {
+  transform: $prperty;
+}
+
+// .btn {
+//   @include transform(rotate(30deg));
+// }

@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import './styles/main.scss';
 // import 'react-phone-number-input/style.css';
 import { QueryClientProvider, QueryClient } from 'react-query';
 // import PhoneInput from 'react-phone-number-input';

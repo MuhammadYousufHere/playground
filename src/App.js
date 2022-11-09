@@ -26,6 +26,9 @@ import Memo from './Advance/Memo';
 import { useCountDown } from './Hooks/new/useCountDown';
 import Pagenation from './components/Pagenation/Pagenation';
 import PagenationQ from './components/Pagenation/PagenationQ';
+import Dragable from './components/dnd/dnd';
+import { DragDropContext } from 'react-beautiful-dnd';
+import Navbar from './components/navbar/navbar';
 
 function Playground() {
   // console.log(uuidv4());
@@ -151,8 +154,10 @@ const App = () => {
     //   <Footer /> */}
     // </QueryClientProvider>
     <>
-      <Header />
-      <Footer />
+      {/* <Header />
+      <Footer /> */}
+      {/* <Dragable /> */}
+      <Navbar />
     </>
   );
 };

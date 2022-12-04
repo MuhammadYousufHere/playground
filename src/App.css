@@ -26,3 +26,10 @@ html,
   box-sizing: border-box;
   padding: 0;
 }
+
+.box-shadow {
+  box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+  box-shadow: 0 0 15px 9px #00000096;
+  background: #333333;
+  color: #e0e0e0;
+}

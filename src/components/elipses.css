@@ -1,0 +1,5 @@
+.ellipsis ::before {
+    border-top-color: #02d0aa;
+    border-top-style: dotted;
+    border-top-width: 10px;
+}

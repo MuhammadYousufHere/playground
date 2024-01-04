@@ -1,0 +1,74 @@
+@use '../styles/colors' as *;
+
+.header-container {
+background: $gradient-essential;
+  background-image:url('../assets/header-background-2.png'), $gradient;
+
+  padding: 8rem 5.5rem 8rem 5.5rem ;
+background-position: center; 
+background-repeat: no-repeat;
+background-size:  100%;
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .left {
+    flex-direction: column;
+    width: 50%;
+    .header-title {
+      h1 {
+        font-size: 4.5rem;
+        margin: 0;
+        color: $primary;
+        &:last-of-type {
+          color: $secondary;
+        }
+      }
+     
+
+    }
+         .header-desc {
+          margin: 3rem 0;
+           h2 {
+            font-size: 1.3rem;
+            margin: 0.5rem;
+            color:$text-primary;
+            font-weight: 400;
+            word-spacing: 2px;
+           }
+         }
+    
+         .action-box {
+           margin: 2rem 0;
+    
+           .btn {
+            background: $secondary;
+            width: 200px;
+            color: $text-primary;
+            border-radius: 100vmax;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.2rem;
+            margin: 0;
+            font-weight: 500;
+           }
+         }
+
+  }
+  .right {
+    // flex-direction: column;
+    width: 50%;
+    position: sticky;
+    right: 0%;
+    // padding-left: 20px;
+    .decorators {
+      flex-direction: column;
+
+      
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+}}
+}

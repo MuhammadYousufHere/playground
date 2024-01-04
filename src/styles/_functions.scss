@@ -1,0 +1,19 @@
+// set text color
+@function set-text-color($color) {
+	//conditionally
+	@if (lightness($color) > 50) {
+		@return #0e0e0e;
+	} @else {
+		@return #eeee;
+	}
+}
+
+
+
+
+
+.text {
+	// should be same
+	background-color: blue;
+	color: set-text-color(blue);
+}

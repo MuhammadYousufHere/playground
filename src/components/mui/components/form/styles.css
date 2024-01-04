@@ -1,0 +1,21 @@
+html[data-theme='light'] {
+  --react-input-bg: #f0f9ff;
+  --react-input-country-highlight-bg: #f1f1f1;
+  --react-input-selected-flag-bg: #ffffff;
+}
+html[data-theme='dark'] {
+  --react-input-bg: #161617;
+  --react-input-country-highlight-bg: none;
+  --react-input-selected-flag-bg: #2c2c2e;
+}
+
+.react-tel-input .country-list .country:hover {
+  background: var(--react-input-bg);
+}
+.react-tel-input .country-list .country.highlight {
+  background-color: var(--react-input-country-highlight-bg);
+}
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+  background-color: var(--react-input-selected-flag-bg);
+}

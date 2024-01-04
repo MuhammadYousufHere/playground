@@ -1,0 +1,49 @@
+@use '../styles/colors' as *;
+.footer-container {
+  background-color: $primary;
+  font-family: inherit;
+  padding: 2rem 6rem;
+  .footer-content {
+    text-align: center;
+    .row {
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        li {
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            color: $secondary;
+            &:hover {cursor:pointer}
+          }
+        }
+      }
+    }
+    .top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      .go {
+        width: 160px;
+        height: 160px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .down {
+      margin: 2rem 0 0 0;
+      ul {
+        gap: 2rem;
+      }
+      svg {
+        color: #fff;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

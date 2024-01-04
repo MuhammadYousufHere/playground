@@ -1,0 +1,39 @@
+.nav-container {
+  background: #224f33;
+  position: absolute;
+  right: 0;
+  box-shadow: 0 0 3en rgba(0, 0, 0, 0.15);
+  transform:translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  .nav-toggle {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    transform: translate(-100%);
+    background-color: #2293;
+    padding: 1em .5em;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: .25em 0 0 .25em;
+  }
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 3em 6ems;
+    .nav-item {
+      margin-bottom: 3em;
+      &:hover {
+        text-decoration: underline;
+        color: #2c3e50;
+      }
+    }
+  }
+}
+.nav-container-open .nav {
+  transform: translate(0);
+
+}

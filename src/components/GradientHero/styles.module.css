@@ -1,0 +1,21 @@
+.gradient_hero {
+  background: radial-gradient(
+      35.25% 33.37% at 100% 34.6%,
+      rgba(55, 124, 255, 0.68) 0%,
+      rgba(55, 124, 255, 0) 100%
+    ),
+    radial-gradient(
+      96.73% 64.96% at 0% 0%,
+      #00256b 20.83%,
+      rgba(0, 37, 107, 0) 100%
+    ),
+    linear-gradient(
+      180deg,
+      #00256b 0%,
+      #053da8 43.75%,
+      #6399ff 66.67%,
+      rgba(11, 95, 255, 0) 100%
+    );
+  position: relative;
+  min-height: 100dvh;
+}

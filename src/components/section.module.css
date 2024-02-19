@@ -1,0 +1,102 @@
+.section {
+  margin: 0;
+  min-width: 0;
+  position: relative;
+  background: #f9fafc;
+  background-image: url(https://icons.hackclub.com/api/icons/0xF4F7FB/glyph:rep.svg);
+  -webkit-background-size: 40px 40px;
+  background-size: 40px 40px;
+  background-repeat: repeat;
+  -webkit-background-position: 10% 10%;
+  background-position: 10% 10%;
+  min-height: 100dvh;
+}
+.section:hover {
+  /* background: radial-gradient(
+    circle at 1039px 1482.5px,
+    rgba(132, 146, 166, 0) 10px,
+    rgba(249, 250, 252, 0.9) 80px
+  ); */
+}
+.card {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  background-color: var(--theme-ui-colors-elevated);
+  color: var(--theme-ui-colors-text);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  color: var(--theme-ui-colors-white);
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding: 24px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-background-position: center bottom;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.img {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  margin-left: -24px;
+  margin-top: -24px;
+  z-index: 0;
+}
+
+.overlay {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.8)
+  );
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.heading,
+.subs {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.009em;
+  line-height: 1;
+  border-radius: 8px;
+  color: #f9fafc;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: -8px;
+  margin-right: -8px;
+  font-size: 36px;
+  position: relative;
+  z-index: 2;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.subs {
+  margin-block: 1rem;
+  font-size: 26px;
+  font-weight: 400;
+}
